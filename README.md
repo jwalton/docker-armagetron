@@ -22,4 +22,8 @@ Then, run the armagetron server:
         -v /opt/armagetron:/etc/armagetronad \
         jwalton/armagetron
 
-Logs are just written to stdout, so if you don't care about logs (or you want them)
+If you edit the configuration files, restart the server with:
+
+    sudo docker restart armagetron
+
+Logs are just written to stdout, so you can view them with `docker logs armagetron`.
